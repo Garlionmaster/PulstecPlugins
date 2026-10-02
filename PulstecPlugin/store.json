@@ -1,0 +1,449 @@
+{
+ "версия": 1,
+ "магазин": {
+  "имя": "Магазин Пульс Офиса",
+  "описание": "Плагины к Пульс Офису: один файл на плагин.",
+  "en": {
+   "имя": "Puls Office store",
+   "описание": "Plugins for Puls Office: one file per plugin."
+  }
+ },
+ "плагины": [
+  {
+   "id": "highlight-code",
+   "имя": "Подсветка кода",
+   "версия": "2.0",
+   "описание": "Разбирает код из выделенных клеток тем же разборщиком, что у редактора модулей («разметить»), и раскладывает его на лист: строка кода — строка листа, лексема — клетка со своим цветом. Языки: JavaScript, SQL, Basic, Python, JSON, HTML.",
+   "категория": "Текст",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/highlight-code/highlight-code.plsplug.json",
+   "размер": 7239,
+   "sha256": "424bed4425a3ae9b86c873eec82a918032d4396c51ef411b819fef1a3d8c3d63",
+   "значок": "plugins/highlight-code/icon.svg",
+   "права": {
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "прежние": [
+    "подсветка-кода"
+   ],
+   "en": {
+    "имя": "Code highlighting",
+    "описание": "Lays code out on the sheet cell by cell, coloured by the same tokenizer the macro editor uses: six languages, one row of the sheet per line of code.",
+    "категория": "Text"
+   }
+  },
+  {
+   "id": "typograf",
+   "имя": "Типограф",
+   "версия": "1.0",
+   "описание": "Типографика русского набора без сервиса: кавычки ёлочками и лапками, тире вместо дефиса, многоточие, знаки © ® ™ ×, лишние пробелы и неразрывный пробел после коротких слов, перед единицами и перед тире. Работает и в книге, и в документе.",
+   "категория": "Текст",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/typograf/typograf.plsplug.json",
+   "размер": 12937,
+   "sha256": "b56e51acf73e841f4e21f6d707dd20b05f94f3ab0319ca1c560fbbbf09b789c6",
+   "значок": "plugins/typograf/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Typography",
+    "описание": "Russian typography right in the book, with no service behind it: guillemets, dashes, ellipsis, the (c) (r) (tm) signs and non-breaking spaces where a line break would hurt the meaning.",
+    "категория": "Text"
+   }
+  },
+  {
+   "id": "cell-formatter",
+   "имя": "Обработка значений",
+   "версия": "1.0",
+   "описание": "Приводит в порядок выделенные клетки: регистр, лишние и неразрывные пробелы, переносы строк, текст в число и обратно, округление, замена (в том числе по образцу), приставка и окончание. Перед записью показывает, что получится.",
+   "категория": "Текст",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/cell-formatter/cell-formatter.plsplug.json",
+   "размер": 10067,
+   "sha256": "9bea20ca7ced4e53dc9163763fdaa7d852e93e1285a9870d599a4708eea415b8",
+   "значок": "plugins/cell-formatter/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Cell values",
+    "описание": "Tidies up the selected cells: letter case, stray and non-breaking spaces, line breaks, text to number and back, rounding, search and replace (plain or by pattern), prefix and suffix. Shows the result before writing it.",
+    "категория": "Text"
+   }
+  },
+  {
+   "id": "input-check",
+   "имя": "Контроль ввода",
+   "версия": "1.0",
+   "описание": "Фоновый плагин: следит за правками (отрицательные числа), кладёт пункты в меню любой клетки, считает итог выделения кнопкой на ленте.",
+   "категория": "Проверки",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/input-check/input-check.plsplug.json",
+   "размер": 4335,
+   "sha256": "87661acc8bb26b0b7bd8296f1baad57f1cfa6a0cab549df715c2104c99636dbe",
+   "значок": "plugins/input-check/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "прежние": [
+    "контроль-ввода"
+   ],
+   "en": {
+    "имя": "Input check",
+    "описание": "A background plugin: watches edits, marks negative numbers, adds a cell-menu item and its own ribbon group.",
+    "категория": "Validation"
+   }
+  },
+  {
+   "id": "selection-stats",
+   "имя": "Статистика выделения",
+   "версия": "1.0",
+   "описание": "Показывает по выделению: клеток, чисел, текста, пустых, сумму, среднее, минимум, максимум и сколько разных значений. Обновляется на каждом ходе курсора; на больших областях итоги считает ядро, не вывозя данные.",
+   "категория": "Проверки",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/selection-stats/selection-stats.plsplug.json",
+   "размер": 6324,
+   "sha256": "d26cb5a88708cdf9e815b312083f74bfc90ec89c3191d38d035a2659d4a6bde6",
+   "значок": "plugins/selection-stats/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Selection statistics",
+    "описание": "For the current selection: cells, numbers, text, blanks, sum, average, minimum, maximum and how many distinct values. Follows the cursor; on large areas the totals are computed by the core without moving any data.",
+    "категория": "Validation"
+   }
+  },
+  {
+   "id": "unit-converter",
+   "имя": "Конвертер единиц",
+   "версия": "1.0",
+   "описание": "Переводит величины между единицами: длина, масса, площадь, объём, скорость, время, данные, давление, энергия, температура. Считает одно значение или переводит всё выделение на месте.",
+   "категория": "Счёт",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/unit-converter/unit-converter.plsplug.json",
+   "размер": 8131,
+   "sha256": "56a6bd2f5b5cc312c83aabb257060e145014524ba87c3f45e0b8d511c38e048e",
+   "значок": "plugins/unit-converter/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Unit converter",
+    "описание": "Converts between units of length, mass, area, volume, speed, time, data, pressure, energy and temperature - one value, or the whole selection in place.",
+    "категория": "Calculation"
+   }
+  },
+  {
+   "id": "date-picker",
+   "имя": "Выбор даты",
+   "версия": "1.0",
+   "описание": "Календарь вместо ручного набора: дата в клетку с нужным форматом, быстрые «сегодня», «начало» и «конец месяца», ряд дат с шагом (день, рабочий день, неделя, месяц, год) и счёт рабочих дней до выбранной.",
+   "категория": "Счёт",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/date-picker/date-picker.plsplug.json",
+   "размер": 10720,
+   "sha256": "6030ad662b248139efa1080d6f0ed880bdaf17b3a286eec08403911a92b56ce2",
+   "значок": "plugins/date-picker/icon.svg",
+   "права": {
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Date picker",
+    "описание": "A calendar instead of typing dates by hand: a date into the cell with the right format, quick \"today\", \"start\" and \"end of month\", a series of dates by step (day, working day, week, month, year) and the count of working days.",
+    "категория": "Calculation"
+   }
+  },
+  {
+   "id": "data-generator",
+   "имя": "Генератор данных",
+   "версия": "1.0",
+   "описание": "Кладёт на лист правдоподобную таблицу для проверок: люди, заказы, числа, даты или свой набор столбцов. Одно и то же зерно даёт одну и ту же таблицу, поэтому проверку можно повторить.",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/data-generator/data-generator.plsplug.json",
+   "размер": 13154,
+   "sha256": "4fe0850ab2bb6eff25e8bc5167450c98e56f224a2c78fd864bb65d3b5d3718e7",
+   "значок": "plugins/data-generator/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Data generator",
+    "описание": "Puts a believable table on the sheet to test against: people, orders, numbers, dates or your own set of columns. The same seed gives the same table, so a test can be repeated.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "pgdb",
+   "имя": "СУБД (PostgreSQL)",
+   "версия": "1.1",
+   "описание": "PostgreSQL и Postgres Pro через HTTP-шлюз: список таблиц и представлений, столбцы, выгрузка данных на лист",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/pgdb/pgdb.plsplug.json",
+   "размер": 14203,
+   "sha256": "dedab7b6dc7c24d2e023ca9daacd8becc6b178af3bd4e391104fbc217555d405",
+   "значок": "plugins/pgdb/icon.svg",
+   "права": {
+    "сеть": [
+     "{сервер}"
+    ],
+    "хранилище": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "DBMS (PostgreSQL)",
+    "описание": "PostgreSQL and Postgres Pro over an HTTP gateway: list of tables and views, a query, the result written onto the sheet.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "hyperion",
+   "имя": "Гиперион",
+   "версия": "1.0",
+   "описание": "Planning 11.1.2.4 и облако: данные, формы, бизнес-правила через REST; двойной щелчок по измерению раскрывает его на месте",
+   "категория": "Данные",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/hyperion/hyperion.plsplug.json",
+   "размер": 61012,
+   "sha256": "e9dd5dcc2e63c3a8b68de54fe7cdc21674c53266c39ff8aef1366810f1e410dc",
+   "значок": "plugins/hyperion/icon.svg",
+   "права": {
+    "сеть": [
+     "{сервер}"
+    ]
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Hyperion",
+    "описание": "Planning 11.1.2.4 and the cloud: data, forms and business rules over REST; the form goes onto the sheet and edits go back.",
+    "категория": "Data"
+   }
+  },
+  {
+   "id": "status-badge",
+   "имя": "Значок состояния",
+   "версия": "1.0",
+   "описание": "Рисует SVG-кружок по числу в клетке и кладёт его на лист объектом: данные остаются при картинке, двойной щелчок перечитывает клетку и перерисовывает значок.",
+   "категория": "Картинки",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/status-badge/status-badge.plsplug.json",
+   "размер": 6583,
+   "sha256": "e5481b5b82da3a90b31bbc80e73034e88f8c7f8e67dacc30454cb6fd2b5e2726",
+   "значок": "plugins/status-badge/icon.svg",
+   "права": {
+    "читает": "лист"
+   },
+   "нужнаВерсия": "1.0",
+   "прежние": [
+    "значок-состояния"
+   ],
+   "en": {
+    "имя": "Status badge",
+    "описание": "Draws an SVG badge from the number in a cell and puts it on the sheet as a plugin object: double-click reopens it for editing.",
+    "категория": "Pictures"
+   }
+  },
+  {
+   "id": "icon-library",
+   "имя": "Библиотека значков",
+   "версия": "1.0",
+   "описание": "Сорок с лишним значков одним SVG каждый: сетка с поиском, выбранный кладётся на лист любым цветом и размером. Картинка векторная — не мылится ни при каком масштабе и в .xlsx уходит как есть.",
+   "категория": "Картинки",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/icon-library/icon-library.plsplug.json",
+   "размер": 10324,
+   "sha256": "98657c5bc0d2f39e6668d5e44475d3e239fe4f60fb07474bdce00dd300d43a5e",
+   "значок": "plugins/icon-library/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Icon library",
+    "описание": "Over forty icons, one SVG each: a grid with search, the chosen one goes onto the sheet in any colour and size. Vector, so it stays sharp at any zoom and travels into .xlsx as it is.",
+    "категория": "Pictures"
+   }
+  },
+  {
+   "id": "qr-code",
+   "имя": "QR-код",
+   "версия": "1.0",
+   "описание": "Делает QR-код из текста или из значения клетки и кладёт его на лист картинкой SVG: чётко в любом масштабе. Версии 1–10, все четыре уровня стойкости, русский текст. Объектом — правится двойным щелчком.",
+   "категория": "Картинки",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/qr-code/qr-code.plsplug.json",
+   "размер": 24391,
+   "sha256": "c57d9e462452c5ead6434e1dd5779440feea80266d366b6f33c5837eeab99a82",
+   "значок": "plugins/qr-code/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "QR code",
+    "описание": "Makes a QR code from text or from a cell value and puts it on the sheet as SVG - sharp at any zoom. Versions 1-10, all four correction levels, non-Latin text. As an object it can be edited again by double-click.",
+    "категория": "Pictures"
+   }
+  },
+  {
+   "id": "pomodoro",
+   "имя": "Помодоро",
+   "версия": "1.0",
+   "описание": "Таймер по методу «помидора»: работа, короткий и длинный перерыв, счёт сделанного. Живёт в потоке плагина — секунды тикают между нажатиями, а по желанию каждый помидор записывается строкой в лист учёта.",
+   "категория": "Работа",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/pomodoro/pomodoro.plsplug.json",
+   "размер": 9608,
+   "sha256": "57a6da399b8ebb6da52f0f7de41e13c7e5f44c65fc0fcfd9cad1a2e2a34938ed",
+   "значок": "plugins/pomodoro/icon.svg",
+   "права": {
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Pomodoro",
+    "описание": "A pomodoro timer: work, short and long break, and a count of what is done. It lives in the plugin thread, so the seconds tick between clicks, and each pomodoro can be logged as a row on a sheet.",
+    "категория": "Workflow"
+   }
+  },
+  {
+   "id": "yandex-translate",
+   "имя": "Переводчик (Яндекс)",
+   "версия": "1.0",
+   "описание": "Переводит выделенные клетки и абзацы через Translate API Яндекс Облака: на место, в соседний столбец или просто показать. Больше сотни языков, определение языка, порции по пределу сервиса. Ключ доступа хранится вне книги и в файл плагина не уходит.",
+   "категория": "Сервисы",
+   "приложения": [
+    "таблицы",
+    "документы"
+   ],
+   "файл": "plugins/yandex-translate/yandex-translate.plsplug.json",
+   "размер": 25937,
+   "sha256": "ccbf125ebf04128f6c0770e199deee154f9b10b263cb78f1e03bab30f40b568e",
+   "значок": "plugins/yandex-translate/icon.svg",
+   "права": {
+    "сеть": [
+     "https://translate.api.cloud.yandex.net",
+     "{сервер}"
+    ],
+    "хранилище": true,
+    "читает": "ничего"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Translator (Yandex)",
+    "описание": "Translates the selected cells through the Yandex Cloud Translate API: in place, into the next column, or just shown. Over a hundred languages, language detection, batching by the service limit. The access key is kept outside the workbook and never leaves in the plugin file.",
+    "категория": "Services"
+   }
+  },
+  {
+   "id": "doc-stats",
+   "имя": "Сведения о тексте",
+   "версия": "1.0",
+   "описание": "Считает то, чего нет в строке состояния: предложения и среднюю длину предложения, самые длинные абзацы, частые слова, число заголовков, таблиц и списков, объём в страницах по 1800 знаков. Может пересчитывать на ходу — по правке и по переходу курсора.",
+   "категория": "Документы",
+   "приложения": [
+    "документы"
+   ],
+   "файл": "plugins/doc-stats/doc-stats.plsplug.json",
+   "размер": 10438,
+   "sha256": "fe2d50d3773144c847790336b2bec4e5a9e6f08b25eaff801737f8203cc7be33",
+   "значок": "plugins/doc-stats/icon.svg",
+   "права": {
+    "хранилище": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Text statistics",
+    "описание": "Counts what the status bar has no room for: sentences and average sentence length, the longest paragraphs, frequent words, how many headings, tables and lists there are, and the volume in 1800-character pages. Can recount as you type and as the caret moves.",
+    "категория": "Documents"
+   }
+  },
+  {
+   "id": "doc-abbr",
+   "имя": "Сокращения",
+   "версия": "1.0",
+   "описание": "Собирает по документу аббревиатуры и сокращения с точкой, показывает, сколько раз каждое встретилось и где впервые, находит те, у которых нигде нет расшифровки, и вставляет «Перечень сокращений» таблицей — разделом, которого требует ГОСТ 7.32.",
+   "категория": "Документы",
+   "приложения": [
+    "документы"
+   ],
+   "файл": "plugins/doc-abbr/doc-abbr.plsplug.json",
+   "размер": 13542,
+   "sha256": "a3415faf62648ab56245a452031a52dc689b9258889695b25a25043dc1840b90",
+   "значок": "plugins/doc-abbr/icon.svg",
+   "права": {
+    "хранилище": true
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Abbreviations",
+    "описание": "Collects abbreviations and shortened forms across the document, shows how many times each occurs and where it first appears, finds the ones never spelled out anywhere, and inserts a \"List of abbreviations\" table - the section GOST 7.32 asks a report for.",
+    "категория": "Documents"
+   }
+  },
+  {
+   "id": "hello-plugin",
+   "имя": "Привет, мир",
+   "версия": "1.0",
+   "описание": "Образец для авторов плагинов: в одном файле — панель со всеми видами полей, окно, диалоги, чтение и запись клеток, группа на ленте, пункт меню, событие выделения, картинка и своя функция для формул.",
+   "категория": "Образцы",
+   "приложения": [
+    "таблицы"
+   ],
+   "файл": "plugins/hello-plugin/hello-plugin.plsplug.json",
+   "размер": 12432,
+   "sha256": "b8ff2e20fe0620e8cface1bc377905cd4760c613f6887cd51a7f11a8d43e8fba",
+   "значок": "plugins/hello-plugin/icon.svg",
+   "права": {
+    "функции": true,
+    "читает": "выделение"
+   },
+   "нужнаВерсия": "1.0",
+   "en": {
+    "имя": "Hello, world",
+    "описание": "A sample for plugin authors: one file with a panel using every kind of field, a window, dialogs, reading and writing cells, a ribbon group, a menu item, a selection event, a picture and a custom formula function.",
+    "категория": "Samples"
+   }
+  }
+ ]
+}
